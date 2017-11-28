@@ -1,0 +1,3 @@
+{
+		"reduceScript":"${reduceScript}"
+}
