@@ -11,7 +11,7 @@
 
     <!-- 版本号 -->
     <properties>
-        <spring.version>3.2.8.RELEASE</spring.version>
+        <spring.version>4.3.17.RELEASE</spring.version>
         <aspectj.version>1.6.11</aspectj.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.encoding>UTF-8</java.encoding>
@@ -166,7 +166,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.3</version>
+            <version>1.2.31</version>
         </dependency>
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
