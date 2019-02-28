@@ -8,6 +8,21 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 
+/**
+ {
+ "_id" : ObjectId("59716ab9c16748181006654a"),
+ "ip" : "10.249.66.204",
+ "param_name" : "leader",
+ "timestamp" : NumberLong(1502357070526)
+ }
+ {
+ "_id" : ObjectId("598bfcf052bb9a1f41781fd7"),
+ "ip" : "10.249.66.204",
+ "param_name" : "worker",
+ "timestamp" : NumberLong(1502357100024),
+ "tasklist" : ",PAS_FlowName,PAS_operationName,APMSetupAllFlow,APMSetupSubFlow_C2C,APMSetupSubFlow_B2C,ReportCountAlertTask::PAS_FlowName::SETUP_APM_C2C,ReportPercentAlertTask::APMSetupAllFlow::APMSetupFlow_Initialized,pulldatatask"
+ }
+ */
 public class ConfigDAOImpl extends ConsoleDAOImpl {
     private static final String CONFIG_COLLECTIONNAME = Initializer.DOMAIN + "_Config";
     private DBCollection configDAO = null;

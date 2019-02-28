@@ -17,7 +17,7 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 
 public class ReportEmailAlertTask extends ReportAlertTask {
-    private String fromEmail = "weijlu@ebay.com";
+    private String fromEmail = "";
     private String toEmail;
     private static final Logger LOG = Logger.getLogger(ReportEmailAlertTask.class);
 

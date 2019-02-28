@@ -5,6 +5,28 @@ import com.eInsight.common.dao.ConsoleDAOImpl;
 import com.eInsight.common.dao.MongoDBFactory;
 import com.mongodb.DBCollection;
 
+/**
+ {
+ "_id" : ObjectId("5971790f33781b6abeba8bd3"),
+ "TimeMatrix" : "HOUR",
+ "Count" : NumberLong(52),
+ "EndDate" : ISODate("2017-07-15T10:00:00.000+0000"),
+ "ColumnValue" : "SETUP_APM_C2C",
+ "StartDate" : ISODate("2017-07-15T09:00:00.000+0000"),
+ "CreationDate" : ISODate("2017-07-21T03:46:23.353+0000"),
+ "ColumnName" : "PAS_FlowName"
+ }
+ {
+ "_id" : ObjectId("5971790f33781b6abeba8bd4"),
+ "TimeMatrix" : "HOUR",
+ "Count" : NumberLong(52),
+ "EndDate" : ISODate("2017-07-15T10:00:00.000+0000"),
+ "ColumnValue" : "SETUP_APM_B2C",
+ "StartDate" : ISODate("2017-07-15T09:00:00.000+0000"),
+ "CreationDate" : ISODate("2017-07-21T03:46:23.353+0000"),
+ "ColumnName" : "PAS_FlowName"
+ }
+ */
 public class AdvancedReportDAOImpl extends ConsoleDAOImpl {
     private static final String CONFIG_COLLECTIONNAME = Initializer.DOMAIN + "_AdvancedReport";
     private DBCollection configDAO = null;

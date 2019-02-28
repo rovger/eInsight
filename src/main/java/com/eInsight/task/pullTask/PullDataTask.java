@@ -17,8 +17,7 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 
-public class PullDataTask
-        extends TaskTemplate {
+public class PullDataTask extends TaskTemplate {
     private Logger s_logger = Logger.getLogger(PullDataTask.class.getSimpleName());
     private String dataURL;
 

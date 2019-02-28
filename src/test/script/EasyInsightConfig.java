@@ -184,7 +184,7 @@ public class EasyInsightConfig implements EasyInsightConfigInterface {
                 }
             };
             taskList.add(new ReportEmailAlertTask("ReportCountAlertTask::" + reportNameValue[0] + "::" + reportNameValue[1], TimeUnit.valueOf(reportNameValue[2]),
-                    reportNameValue[0], reportNameValue[1], countAlertCallBack, "Rovger@163.com", "weijlu@ebay.com,lixie@ebay.com"));
+                    reportNameValue[0], reportNameValue[1], countAlertCallBack, "", ""));
         }
 
         //percent alert tasks
@@ -267,11 +267,11 @@ public class EasyInsightConfig implements EasyInsightConfigInterface {
                 }
             };
             taskList.add(new ReportEmailAlertTask("ReportPercentAlertTask::" + reportNameValue[0] + "::" + reportNameValue[1], TimeUnit.valueOf(reportNameValue[2]),
-                    reportNameValue[0], reportNameValue[1], percentAlertCallBack, "weijlu@ebay.com", "weijlu@ebay.com,lixie@ebay.com"));
+                    reportNameValue[0], reportNameValue[1], percentAlertCallBack, "", ""));
         }
 
         //pull data task
-        taskList.add(new PullDataTask("pulldatatask", TimeUnit.MINUTELY, "http://mmpmsvc-2.stratus.qa.ebay.com/mmpm/audit/pas/{0}/{1}/all"));
+        taskList.add(new PullDataTask("pulldatatask", TimeUnit.MINUTELY, "address/mmpm/audit/pas/{0}/{1}/all"));
         return taskList;
     }
 
